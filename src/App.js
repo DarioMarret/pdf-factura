@@ -21,13 +21,14 @@ function App() {
       console.log('entro', JSON.parse(decode(window.location.search.split("?")[1])))
       setData(JSON.parse(decode(window.location.search.split("?")[1])))
     }
-    let deco = decode(window.location.href.split('/pdf/')[1])
-    console.log("Decode: ",deco)
-    console.log("Decode: ",typeof deco)
-    console.log(decode(window.location.href.split('/pdf/')[1]))
     if (window.location.href.split('/pdf/')[1]) {
-      console.log('entro', JSON.parse(decode(window.location.href.split('/pdf/')[1])))
-      setData(JSON.parse(decode(window.location.href.split('/pdf/')[1])))
+      let deco = decode(window.location.href.split('/pdf/')[1])
+      console.log("Decode: ",deco)
+      let DecoPar = JSON.parse(deco)
+      console.log("DecoPar: ", DecoPar)
+      console.log("DecoPar: ", typeof DecoPar)
+      console.log(decode(window.location.href.split('/pdf/')[1]))
+      setData(DecoPar)
     }
     setLoader(false)
   }, []);
