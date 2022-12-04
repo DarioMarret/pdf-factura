@@ -21,6 +21,11 @@ function App() {
       console.log('entro', JSON.parse(decode(window.location.search.split("?")[1])))
       setData(JSON.parse(decode(window.location.search.split("?")[1])))
     }
+    console.log(window.location.href.split('/pdf/')[1])
+    if (window.location.href.split('/pdf/')[1]) {
+      console.log('entro', JSON.parse(decode(window.location.href.split('/pdf/')[1])))
+      setData(JSON.parse(decode(window.location.href.split('/pdf/')[1])))
+    }
     setLoader(false)
   }, []);
 
