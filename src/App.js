@@ -138,7 +138,7 @@ function App() {
               </tr>
               <tr className=''>
                 <td className='textcenter'>${data.infoFactura.totalSinImpuestos}</td>
-                <td className='textcenter'>8.00%</td>
+                <td className='textcenter'>12.00%</td>
                 <td className='textcenter'>${data.infoFactura.importeTotal}</td>
               </tr>
             </table>
