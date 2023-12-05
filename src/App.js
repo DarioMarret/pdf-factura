@@ -35,6 +35,8 @@ function App() {
     //   console.log('entro', JSON.parse(decode(window.location.search.split("?")[1])))
     //   setData(JSON.parse(decode(window.location.search.split("?")[1])))
     // }
+
+    console.log(data)
     setLoader(false)
   }, []);
 
@@ -154,7 +156,7 @@ function App() {
               <tr className=''>
                 <td className='textcenter'>${
                   data.infoFactura.totalConImpuestos.totalImpuesto.length > 1 ?
-                  parseFloat(data.infoFactura.totalConImpuestos.totalImpuesto[1].valor).toFixed(2) : 0
+                  parseFloat(data.infoFactura.totalConImpuestos.totalImpuesto[1].baseImponible).toFixed(2) : 0
                 }</td>
                 <td className='textcenter'>${data.infoFactura.totalSinImpuestos}</td>
                 <td className='textcenter'>${
